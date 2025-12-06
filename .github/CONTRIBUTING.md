@@ -44,7 +44,7 @@ If you need more reasons than that though, then because...
 
 First off, no matter how you plan to take part, please take a couple of minutes to read our code of conduct before contributing anything.
 
-This project and everyone participating in it are governed by the [FOSSBilling Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the moderators on our [Discord](https://fossbilling.org/discord) server.
+This project and everyone participating in it are governed by the [FOSSBilling Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the moderators on our [Discord](https://fossbilling.org/discord) server.
 
 ## How Can I Contribute?
 
@@ -52,7 +52,7 @@ There are a lot of different ways that you can get involved in the FOSSBilling p
 
 ### Reporting Bugs
 
-If you find a bug in FOSSBilling, please report it. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer:, and find related reports :mag_right:.
+If you find a bug in FOSSBilling, please report it. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
 #### Before Submitting a Bug Report
 
@@ -60,11 +60,11 @@ If you find a bug in FOSSBilling, please report it. Following these guidelines h
 
 Firstly, __search existing issues__ to see if the problem has already been reported. If it has __and the issue is still open__, add a comment to the existing issue instead of opening a new one.
 
-> __Important Note:__ If you find a _Closed__ issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
+> __Important Note:__ If you find a _Closed_ issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
 #### How Do I Submit A (Good) Bug Report?
 
-Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've determined which project your bug is related to, create an issue in the appropriate repository and provide the following information by filling in [the template](https://github.com/FOSSBilling/.github/blob/master/.github/ISSUE_TEMPLATE/bug_report.md).
+Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've determined which project your bug is related to, create an issue in the appropriate repository and provide the following information by filling in [the template](ISSUE_TEMPLATE/bug_report.md).
 
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
@@ -86,7 +86,7 @@ Provide more context by answering these questions:
 Include details about your configuration and environment:
 
 * __If applicable, which version of FOSSBilling are you using?__ For the main project, you can get the exact version by running `https://<your domain>/api/guest/system/version` in your browser.
-* __What's the name and version of the server OS your FOSSBilling installation is running?__
+* __What's the name and version of the server OS you are using?__
 * __What's the PHP version your server is using?__
 * __What's the MySQL version your server is using?__
 * **What's the Web Server and version you're using?__
@@ -105,7 +105,7 @@ The source code is the heart of FOSSBilling, and we are always interested in qua
 
 #### What to Work On
 
-Check out our upcoming Milestones (if available) for an overview of what needs to be done. See the Good first issue label for a list of issues that should be relatively easy to get started with. If there's anything you're unsure of, don't hesitate to ask! All of us were just starting once.
+Check out our upcoming Milestones (if available) for an overview of what needs to be done. See the _Good first issue_ label for a list of issues that should be relatively easy to get started with. If there's anything you're unsure of, don't hesitate to ask! All of us were just starting once.
 
 If you're planning to go ahead and work on something, please leave a comment on the relevant issue or create a new one explaining what you are doing. This helps us divide our efforts more sensibly by ensuring that we are not all doing the same thing at the same time.
 
@@ -141,7 +141,7 @@ Please try to be thorough and clear when writing directions. Something might see
 
 ### Translating FOSSBilling
 
-We would like FOSSBilling to be available to as many people in as many languages as possible. *This primarily applies to the main FOSSBilling project and user-facing interfaces.*
+We would like FOSSBilling to be available to as many people in as many languages as possible. _This primarily applies to the main FOSSBilling project and user-facing interfaces._
 
 The software is primarily written in English. If you are a native or fluent speaker of another language then we could use your help with the translations.
 
