@@ -1,13 +1,13 @@
 <!-- markdownlint-disable MD033 -->
 # Contributing to FOSSBilling
 
-:+1::tada: First off, thanks for expressing an interest in contributing to FOSSBilling! :tada::+1:
+:+1::tada: First off, thanks for expressing an interest in contributing to FOSSBilling! :tada:
 
-Whether open-source projects live or die completely depends on community participation and involvement. This one is no exception, so we appreciate and welcome every contribution.
+Whether open-source projects thrive or fade depends on community participation and involvement. This one is no exception, so we appreciate and welcome every contribution.
 
 The document is a set of guidelines for contributing to FOSSBilling code and documentation, which are hosted in the [FOSSBilling Organization](https://github.com/FOSSBilling) on GitHub. These are strong guidelines but not set in stone rules. Please use your best judgement, feel free to propose changes to this document in a pull request, and don't be afraid to ask questions.
 
-We've tried to keep this document as short as possible but there is a lot of information to get through. If you are looking for something specific then you can use the table of contents to skip to that section:
+We've tried to keep this document as short as possible but there is a lot of information to get through. Don't worry if you're new to open source or FOSSBilling; we're happy to help you get started! If you are looking for something specific then you can use the table of contents to skip to that section:
 
 ## Contents
 
@@ -15,7 +15,6 @@ We've tried to keep this document as short as possible but there is a lot of inf
 
 * [Before You Get Started](#before-you-get-started)
   * [Code of Conduct](#code-of-conduct)
-  * [Understanding the Structure of FOSSBilling](#understanding-the-structure-of-fossbilling)
 
 * [How Can I Contribute?](#how-can-i-contribute)
   * [Reporting Bugs](#reporting-bugs)
@@ -35,9 +34,9 @@ In one simple sentence, every contribution means not just that you give somethin
 
 If you need more reasons than that though, then because...
 
-* __Shape the project's future__. There are a lot of open issues in our GitHub repo, by taking part in the discussion and submitting code contributions to work on the ones that are most important to you, you get to shape the future of the project.
+* __Shape the project's future__. There are likely open issues in this repository (and the main FOSSBilling repo), by taking part in the discussion and submitting code contributions to work on the ones that are most important to you, you get to shape the future of the project.
 * __Develop your skills__. Whether you are writing PHP or writing documentation, being a part of a collaborative project with others actively reviewing your work helps you to build your skills.
-* __It's fun__. We are transforming an outdated piece of software and building something modern and exciting, there are going to be a lot of challenges along the way, and taking part in solving them is fun and satisfying.
+* __It's fun__. We are building modern and exciting open source software, there are going to be a lot of challenges along the way, and taking part in solving them is fun and satisfying.
 
 ## Before You Get Started
 
@@ -46,20 +45,6 @@ If you need more reasons than that though, then because...
 First off, no matter how you plan to take part, please take a couple of minutes to read our code of conduct before contributing anything.
 
 This project and everyone participating in it are governed by the [FOSSBilling Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the moderators on our [Discord](https://fossbilling.org/discord) server.
-
-### Understanding the Structure of FOSSBilling
-
-FOSSBilling is an open-source project &mdash; it's made up of over [50 modules](https://github.com/FOSSBilling/FOSSBilling/tree/master/src/modules). When you initially consider contributing to FOSSBilling, you might be unsure about which of those 50 modules implements the functionality you want to change or report a bug for. This section should help you with that.
-
-There are 2 types of modules:
-
-* Service modules
-* All other modules
-
-Think of Service modules as products that you want to sell. These modules have actions related to product configuration. Let's say the `Servicedownloadable` module allows you to sell downloadable products such as e-books, images, photos, and documents. The module keeps track of the number of downloads, and how many downloads were made.
-If you need to sell a new type of product you will implement a Service type module.
-
-Other modules extend the whole FOSSBilling API with any functionality needed. Check existing modules to get an idea of what is already shipped with the default structure of FOSSBilling.
 
 ## How Can I Contribute?
 
@@ -71,17 +56,19 @@ If you find a bug in FOSSBilling, please report it. Following these guidelines h
 
 #### Before Submitting a Bug Report
 
-⚠️ If your report is for a potential security exploit, please do not make it public by creating an Issue, but instead, follow the instructions in our [Security Policy](https://github.com/FOSSBilling/FOSSBilling/security/policy).
+⚠️ If your report is for a potential security exploit, please do not make it public by creating an Issue, but instead, follow the instructions in our [Security Policy](https://github.com/FOSSBilling/.github/security/policy).
 
-Firstly, __Do a [search](https://github.com/search?q=+is%3Aissue+user%3Afossbilling)__ of the existing issues to see if the problem has already been reported. If it has __and the issue is still open__, add a comment to the existing issue instead of opening a new one.
+Firstly, __search existing issues__ to see if the problem has already been reported. If it has __and the issue is still open__, add a comment to the existing issue instead of opening a new one.
 
-> __Note:__ If you find a _Closed__ issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
+> __Important Note:__ If you find a _Closed__ issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
 #### How Do I Submit A (Good) Bug Report?
 
-Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've determined which module your bug is related to, create an issue and provide the following information by filling in [the template](https://github.com/FOSSBilling/.github/blob/master/.github/ISSUE_TEMPLATE/bug_report.md).
+Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've determined which project your bug is related to, create an issue in the appropriate repository and provide the following information by filling in [the template](https://github.com/FOSSBilling/.github/blob/master/.github/ISSUE_TEMPLATE/bug_report.md).
 
 Explain the problem and include additional details to help maintainers reproduce the problem:
+
+__Include these key details:__
 
 * __Use a clear and descriptive title__ for the issue to identify the problem.
 * __Describe the exact steps which reproduce the problem__ in as much detail as possible. For example, start by explaining what section exactly you used in the browser, or which API call you were using. When listing steps, __don't just say what you did but explain how you did it__.
@@ -98,8 +85,8 @@ Provide more context by answering these questions:
 
 Include details about your configuration and environment:
 
-* __Which version of FOSSBilling are you using?__ You can get the exact version by running `https://<your domain>/api/guest/system/version` in your browser.
-* __What's the name and version of the server OS you're FOSSBilling installation is running?__
+* __If applicable, which version of FOSSBilling are you using?__ For the main project, you can get the exact version by running `https://<your domain>/api/guest/system/version` in your browser.
+* __What's the name and version of the server OS your FOSSBilling installation is running?__
 * __What's the PHP version your server is using?__
 * __What's the MySQL version your server is using?__
 * **What's the Web Server and version you're using?__
@@ -108,9 +95,9 @@ Include details about your configuration and environment:
 
 ⚠️ Please note the title is __*Suggesting*__, not __*Demanding*__. Be polite, appreciate other people's time, and explain in detail, and you are far more likely to get what you want!
 
-FOSSBilling is not designed to be all things to all people, but we do want it to be as useful and usable as possible. If you have a suggestion for a new feature or an improvement to an existing one then please do submit it. Please be as clear and explicit as you can and provide as much detail as you can, this will make it much easier for the community and maintainers to understand your suggestion and take action.
+FOSSBilling is not designed to be everything for everyone, but we do want it to be as useful and usable as possible for billing and client management. If you have a suggestion for a new feature or an improvement to an existing one then please do submit it. Please be as clear and explicit as you can and provide as much detail as you can, this will make it much easier for the community and maintainers to understand your suggestion and take action.
 
-Before creating enhancement suggestions, please check through the [existing Issues](https://github.com/FOSSBilling/FOSSBilling/issues) and see if somebody has already made the same suggestion. If they have then please don't create a new issue, but instead, add your thoughts and comments to the existing one.
+Before creating enhancement suggestions, please check through the existing issues in this repository and the main [FOSSBilling repository](https://github.com/FOSSBilling/FOSSBilling/issues) and see if somebody has already made the same suggestion. If they have then please don't create a new issue, but instead, add your thoughts and comments to the existing one.
 
 ### Contributing Code
 
@@ -118,13 +105,13 @@ The source code is the heart of FOSSBilling, and we are always interested in qua
 
 #### What to Work On
 
-Check out our upcoming Milestones for an overview of what needs to be done. See the Good first issue label for a list of issues that should be relatively easy to get started with. If there's anything you're unsure of, don't hesitate to ask! All of us were just starting once.
+Check out our upcoming Milestones (if available) for an overview of what needs to be done. See the Good first issue label for a list of issues that should be relatively easy to get started with. If there's anything you're unsure of, don't hesitate to ask! All of us were just starting once.
 
 If you're planning to go ahead and work on something, please leave a comment on the relevant issue or create a new one explaining what you are doing. This helps us divide our efforts more sensibly by ensuring that we are not all doing the same thing at the same time.
 
 #### Local Development
 
-FOSSBilling and all packages can be developed locally. Instructions on how to do this are provided in [Readme](README.md):
+Instructions on how to do this are usually provided in this repository's README file, or check the main [FOSSBilling repository](https://github.com/FOSSBilling/FOSSBilling) for general guidance.
 
 #### Making a Pull Request
 
@@ -140,13 +127,13 @@ Please follow these steps to have your contribution considered by the maintainer
 1. Follow the [Style Guides](#style-guides)
 2. After you submit your pull request, verify that all [status checks](https://help.github.com/articles/about-status-checks/) are passing <details><summary>What if the status checks are failing?</summary>If a status check is failing, and you believe that the failure is unrelated to your change, please leave a comment on the pull request explaining why you believe the failure is unrelated. A maintainer will re-run the status check for you. If we conclude that the failure was a false positive, then we will open an issue to track that problem with our status check suite.</details>
 
-Before a PR can be merged it must pass all of the automated tests and also be reviewed by two maintainers. All of the above requirements must be met before your pull request will be reviewed. Please be aware that the reviewers may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
+Before a PR can be merged it must pass all of the automated tests and also be reviewed by two maintainers. All of the above requirements must be met before your pull request will be reviewed. Please ensure your code includes appropriate tests where applicable, and be aware that reviewers may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
 
 ### Writing Documentation
 
 Great code is only one-half of any successful project, and great documentation is just as important. The reality is that open source projects can stand or fall based on the quality of their documentation.
 
-The documentation for FOSSBilling is hosted here: [FOSSBilling Docs](https://fossbilling.org/docs)
+For the main FOSSBilling project, documentation is hosted here: [FOSSBilling Docs](https://fossbilling.org/docs)
 
 Documentation is built using [Nextra](https://nextra.site/) from this [GitHub repository](https://github.com/FOSSBilling/docs). You can contribute directly to the repo on GitHub or using the _Edit this page_ links on each page of the docs site.
 
@@ -154,7 +141,7 @@ Please try to be thorough and clear when writing directions. Something might see
 
 ### Translating FOSSBilling
 
-We would like FOSSBilling to be available to as many people in as many languages as possible.
+We would like FOSSBilling to be available to as many people in as many languages as possible. *This primarily applies to the main FOSSBilling project and user-facing interfaces.*
 
 The software is primarily written in English. If you are a native or fluent speaker of another language then we could use your help with the translations.
 
@@ -177,14 +164,13 @@ Please be as clear and descriptive as possible in your commit messages, it makes
 * Limit the first line to 72 characters or less
 * Reference issues and pull requests liberally after the first line
 * When only changing documentation, include `[ci skip]` in the commit title
-* When it is appropriate to start the commit message with an applicable emoji:
-  * 🎨 when improving the format/structure of the code
-  * 🚀 when improving performance
-  * 📝 when writing docs
-  * 🐛 when fixing a bug
-  * 🔒 when dealing with security
-  * ⬆️ when upgrading dependencies
-  * :sparkles: when it is a new feature
+
+__Example:__
+
+```text
+Fix login redirect issue when session expires
+Resolves #123
+```
 
 ### AI and LLM Usage
 
@@ -194,13 +180,27 @@ Do not use an AI or LLM to generate changes, respond to issues, or interact with
 
 ### PHP Style Guide
 
-All PHP must adhere to [PSR-12](https://www.php-fig.org/psr/psr-12/).
+If this repository contains PHP code, it should adhere to [PSR-12](https://www.php-fig.org/psr/psr-12/) (unless otherwise specified).
 
 ### Documentation Style Guide
 
-We don't have a formal documentation style guide yet, but we will be developing one soon. In the meantime please take a look at the existing documentation and follow the tone and writing style so that everything stays coherent.
+Good documentation is clear, concise, and helpful. We follow the [GitHub Docs style guide](https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide) as our foundation.
 
-Nextra uses Markdown and MDX. Please [see their guides](https://nextra.site/docs/guide/markdown) for how to use them if you are not sure.
+__Key principles to keep in mind:__
+
+* __Write for your audience:__ Use clear, everyday language. If you need technical terms, explain them
+* __Be concise:__ Get to the point quickly, but don't sacrifice clarity for brevity
+* __Use active voice:__ "Click the button" is better than "The button should be clicked"
+* __Include examples:__ Show, don't just tell. Code snippets and screenshots are your friends
+* __Structure content logically:__ Use headings, lists, and tables to break up information
+
+__For technical details:__
+
+* We use Markdown for documentation (with MDX support where available)
+* If you're working on the main documentation site, it's built with [Nextra](https://nextra.site/docs/guide/markdown)
+* Follow the existing format and tone in the documentation you're contributing to
+
+When in doubt, read it out loud; if it sounds natural and clear to you, it'll probably sound clear to others too.
 
 ## But, I Still Have a Question
 
