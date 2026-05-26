@@ -7,5 +7,5 @@ contact_links:
     url: https://fossbilling.org/discord
     about: Ask installation, configuration, and troubleshooting questions on Discord.
   - name: Security Vulnerabilities
-    url: https://github.com/FOSSBilling/FOSSBilling/security/policy
+    url: https://github.com/FOSSBilling/.github/security/policy
     about: Report possible security vulnerabilities privately.
