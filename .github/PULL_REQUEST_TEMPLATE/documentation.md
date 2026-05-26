@@ -1,30 +1,27 @@
-### Requirements for Contributing Documentation
+## Summary
 
-* Fill out the template below. Any pull request that does not include enough information to be reviewed in a timely manner may be closed at the maintainers' discretion.
-* The pull request must only contribute documentation (for example, markdown files or API docs). To contribute other changes, you must use a different template. You can see all templates at <https://github.com/atom/.github/tree/master/.github/PULL_REQUEST_TEMPLATE>.
+<!-- Briefly explain what documentation changed and why. -->
 
-### Description of the Change
+Fixes #
 
-<!--
+## Checklist
 
-We must be able to understand the purpose of your change from this description. If we can't get a good idea of the benefits of the change from the description here, the pull request may be closed at the maintainers' discretion.
+- [ ] I have checked that the documentation matches the current behavior.
+- [ ] I have checked links, headings, and examples touched by this pull request.
+- [ ] I have kept this pull request limited to documentation-only changes.
 
--->
+## Changes
 
-### Release Notes
+<!-- List the pages, sections, or examples updated. -->
 
-<!--
+## Verification
 
-Please describe the changes in a single line that explains this improvement in
-terms that a user can understand.  This text will be used in Atom's release notes.
+<!-- Describe how you reviewed the rendered documentation, links, examples, or screenshots. -->
 
-If this change is not user-facing or notable enough to be included in release notes
-you may use the strings "Not applicable" or "N/A" here.
+## Screenshots
 
-Examples:
+<!-- Add screenshots for rendered documentation changes when useful. Use "N/A" if not applicable. -->
 
-- The GitHub package now allows you to add co-authors to commits.
-- Fixed an issue where multiple cursors did not work in a file with a single line.
-- Increased the performance of searching and replacing across a whole project.
+## Release Notes
 
--->
+<!-- User-facing one-line summary, or "N/A" if this does not need release notes. -->

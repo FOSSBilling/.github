@@ -1,70 +1,42 @@
-### Requirements for Adding, Changing, or Removing a Feature
+## Summary
 
-* Fill out the template below. Any pull request that does not include enough information to be reviewed in a timely manner may be closed at the maintainers' discretion.
-* The pull request must contribute a change that has been endorsed by the maintainer team. See details in the template below.
-* The pull request must update the test suite to exercise the updated functionality. For guidance, please see <https://flight-manual.atom.io/hacking-atom/sections/writing-specs/>.
-* After you create the pull request, all status checks must be pass before a maintainer reviews your contribution. For more details, please see <https://github.com/atom/.github/tree/master/CONTRIBUTING.md#pull-requests>.
+<!-- Briefly explain the feature, improvement, or behavior change. -->
 
-### Issue or RFC Endorsed by Atom's Maintainers
+Closes #
 
-<!--
+## Checklist
 
-Link to the issue or RFC that your change relates to. This must be one of the following:
+- [ ] I have linked the issue, discussion, or maintainer-approved proposal for this change.
+- [ ] I have kept this pull request focused on one feature or behavior change.
+- [ ] I have added or updated tests, or explained below why tests are not needed.
+- [ ] I have updated documentation where users or developers need to know about the change.
+- [ ] I have considered backward compatibility, upgrades, and existing installations.
+- [ ] I have checked that no secrets, credentials, or private customer data are included.
 
-* An open issue with the `help-wanted` label
-* An open issue with the `triaged` label
-* An RFC with "accepted" status
+## Motivation
 
-To contribute an enhancement that isn't covered by one of the items above, please follow our guide for suggesting an enhancement: https://github.com/atom/.github/blob/master/CONTRIBUTING.md#suggesting-enhancements
+<!-- What problem does this solve, and who benefits from it? -->
 
-To contribute other changes, you must use a different template. You can see all templates at https://github.com/atom/.github/tree/master/.github/PULL_REQUEST_TEMPLATE.
+## Changes
 
--->
+<!-- List the important implementation changes. -->
 
-### Description of the Change
+## Compatibility and Upgrade Impact
 
-<!--
+<!-- Note database migrations, configuration changes, API changes, extension impact, or "N/A". -->
 
-We must be able to understand the design of your change from this description. If we can't get a good idea of what the code will be doing from the description here, the pull request may be closed at the maintainers' discretion. Keep in mind that the maintainer reviewing this PR may not be familiar with or have worked with the code here recently, so please walk us through the concepts.
+## Alternatives Considered
 
--->
+<!-- Mention meaningful alternatives or tradeoffs. Use "N/A" if not applicable. -->
 
-### Alternate Designs
+## Verification
 
-<!-- Explain what other alternates were considered and why the proposed version was selected -->
+<!-- Describe exactly how you tested the change. Include commands run and any manual steps. -->
 
-### Possible Drawbacks
+## Screenshots
 
-<!-- What are the possible side-effects or negative impacts of the code change? -->
+<!-- Add before/after screenshots or recordings for UI changes. Use "N/A" if not applicable. -->
 
-### Verification Process
+## Release Notes
 
-<!--
-
-What process did you follow to verify that your change has the desired effects?
-
-- How did you verify that all new functionality works as expected?
-- How did you verify that all changed functionality works as expected?
-- How did you verify that the change has not introduced any regressions?
-
-Describe the actions you performed (including buttons you clicked, text you typed, commands you ran, etc.), and describe the results you observed.
-
--->
-
-### Release Notes
-
-<!--
-
-Please describe the changes in a single line that explains this improvement in
-terms that a user can understand. This text will be used in Atom's release notes.
-
-If this change is not user-facing or notable enough to be included in release notes
-you may use the strings "Not applicable" or "N/A" here.
-
-Examples:
-
-- The GitHub package now allows you to add co-authors to commits.
-- Fixed an issue where multiple cursors did not work in a file with a single line.
-- Increased the performance of searching and replacing across a whole project.
-
--->
+<!-- User-facing one-line summary, or "N/A" if this does not need release notes. -->
