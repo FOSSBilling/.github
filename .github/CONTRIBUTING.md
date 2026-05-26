@@ -34,7 +34,7 @@ In one simple sentence, every contribution means not just that you give somethin
 
 If you need more reasons than that though, then because...
 
-* __Shape the project's future__. There are likely open issues in this repository (and the main FOSSBilling repo), by taking part in the discussion and submitting code contributions to work on the ones that are most important to you, you get to shape the future of the project.
+* __Shape the project's future__. There are likely open issues across FOSSBilling repositories. By taking part in the discussion and submitting code contributions to work on the ones that are most important to you, you get to shape the future of the project.
 * __Develop your skills__. Whether you are writing PHP or writing documentation, being a part of a collaborative project with others actively reviewing your work helps you to build your skills.
 * __It's fun__. We are building modern and exciting open source software, there are going to be a lot of challenges along the way, and taking part in solving them is fun and satisfying.
 
@@ -52,7 +52,7 @@ There are a lot of different ways that you can get involved in the FOSSBilling p
 
 ### Reporting Bugs
 
-If you find a bug in FOSSBilling, please report it. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
+If you find a bug in a FOSSBilling project, please report it. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
 #### Before Submitting a Bug Report
 
@@ -64,7 +64,7 @@ Firstly, __search existing issues__ to see if the problem has already been repor
 
 #### How Do I Submit A (Good) Bug Report?
 
-Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). After you've determined which project your bug is related to, create an issue in the appropriate repository and provide the following information by filling in [the template](ISSUE_TEMPLATE/bug_report.md).
+Bugs are tracked as [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues). After you've determined which project your bug is related to, create an issue in the appropriate repository and fill in the bug report form. If the repository does not have a more specific form, GitHub will use this organization's default [bug report template](ISSUE_TEMPLATE/bug_report.yml).
 
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
@@ -85,19 +85,18 @@ Provide more context by answering these questions:
 
 Include details about your configuration and environment:
 
-* __If applicable, which version of FOSSBilling are you using?__ For the main project, you can get the exact version by running `https://<your domain>/api/guest/system/version` in your browser.
-* __What's the name and version of the server OS you are using?__
-* __What's the PHP version your server is using?__
-* __What's the MySQL version your server is using?__
-* **What's the Web Server and version you're using?__
+* __Which repository, package, page, module, workflow, or component is affected?__
+* __Which version, branch, commit, URL, package version, or documentation page is affected?__
+* __What operating system, runtime, browser, database, web server, package manager, or installation method is relevant?__
+* __Can you include logs, error messages, stack traces, screenshots, or recordings?__ Remove secrets, tokens, passwords, and private customer data first.
 
 ### Suggesting Improvements or New Features
 
 ⚠️ Please note the title is __*Suggesting*__, not __*Demanding*__. Be polite, appreciate other people's time, and explain in detail, and you are far more likely to get what you want!
 
-FOSSBilling is not designed to be everything for everyone, but we do want it to be as useful and usable as possible for billing and client management. If you have a suggestion for a new feature or an improvement to an existing one then please do submit it. Please be as clear and explicit as you can and provide as much detail as you can, this will make it much easier for the community and maintainers to understand your suggestion and take action.
+FOSSBilling is not designed to be everything for everyone, but we do want the project to be as useful, maintainable, and usable as possible. If you have a suggestion for a new feature or an improvement to an existing one then please do submit it. Please be as clear and explicit as you can and provide as much detail as you can, this will make it much easier for the community and maintainers to understand your suggestion and take action.
 
-Before creating enhancement suggestions, please check through the existing issues in this repository and the main [FOSSBilling repository](https://github.com/FOSSBilling/FOSSBilling/issues) and see if somebody has already made the same suggestion. If they have then please don't create a new issue, but instead, add your thoughts and comments to the existing one.
+Before creating enhancement suggestions, please check through the existing issues in the relevant repository and see if somebody has already made the same suggestion. If they have then please don't create a new issue, but instead, add your thoughts and comments to the existing one. If the repository does not have a more specific form, GitHub will use this organization's default [feature request template](ISSUE_TEMPLATE/feature_request.yml).
 
 ### Contributing Code
 
@@ -111,7 +110,7 @@ If you're planning to go ahead and work on something, please leave a comment on 
 
 #### Local Development
 
-Instructions on how to do this are usually provided in this repository's README file, or check the main [FOSSBilling repository](https://github.com/FOSSBilling/FOSSBilling) for general guidance.
+Instructions on how to do this are usually provided in the repository's README file. For application development, check the main [FOSSBilling repository](https://github.com/FOSSBilling/FOSSBilling) for general guidance.
 
 #### Making a Pull Request
 
@@ -125,9 +124,12 @@ The process described here has several goals:
 Please follow these steps to have your contribution considered by the maintainers:
 
 1. Follow the [Style Guides](#style-guides)
-2. After you submit your pull request, verify that all [status checks](https://help.github.com/articles/about-status-checks/) are passing <details><summary>What if the status checks are failing?</summary>If a status check is failing, and you believe that the failure is unrelated to your change, please leave a comment on the pull request explaining why you believe the failure is unrelated. A maintainer will re-run the status check for you. If we conclude that the failure was a false positive, then we will open an issue to track that problem with our status check suite.</details>
+2. Choose the pull request template that best matches your change: bug fix, feature change, or documentation.
+3. Keep the pull request focused on one issue, feature, or documentation change.
+4. Include tests, documentation updates, screenshots, and release notes when they apply.
+5. After you submit your pull request, verify that all [status checks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks) are passing. <details><summary>What if the status checks are failing?</summary>If a status check is failing, and you believe that the failure is unrelated to your change, please leave a comment on the pull request explaining why you believe the failure is unrelated. A maintainer may re-run the status check for you. If we conclude that the failure was a false positive, then we will open an issue to track that problem with our status check suite.</details>
 
-Before a PR can be merged it must pass all of the automated tests and also be reviewed by two maintainers. All of the above requirements must be met before your pull request will be reviewed. Please ensure your code includes appropriate tests where applicable, and be aware that reviewers may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
+Before a PR can be merged it must pass the required automated checks and receive the required maintainer review for that repository. Please ensure your code includes appropriate tests where applicable, and be aware that reviewers may ask you to complete additional design work, tests, documentation, or other changes before your pull request can be ultimately accepted.
 
 ### Writing Documentation
 
